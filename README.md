@@ -1,14 +1,105 @@
-# VERSION CONTROL SYSTEM PRACTICAL ASSIGNMENT
+VERSION CONTROL SYSTEM PRACTICAL ASSIGNMENT
 
-## Introduction:
-This  Practical Assignment emphasizes the application of version control concepts in the development and evaluation of machine learning models. The assignment is designed to enhance students’ practical understanding of collaborative software development, effective use of Git and GitHub workflows, and systematic model evaluation techniques.
+Introduction
 
-Through this project, students will demonstrate their ability to clone, run, modify, and manage machine learning code using a version control system. The assignment also introduces learners to the key differences between centralized/local and distributed version control systems, enabling them to appreciate modern collaborative development practices.
+This project demonstrates the application of version control concepts in the development and evaluation of machine learning models. It focuses on collaborative software development using Git and GitHub, as well as the implementation and comparison of multiple classification models for fraud detection.
 
-Additionally, students will implement and compare multiple machine learning models using a common dataset, evaluate their performance using appropriate metrics, and present their findings through clear documentation. This practical exercise builds essential skills in teamwork, version control, experimentation, and technical reporting, preparing students for real-world software development and data science projects.
+Through this assignment, we demonstrate the ability to clone, modify, and manage code within a distributed version control system. The project also highlights key collaborative workflows such as branching, committing, merging, and resolving conflicts.
 
-This project aims to compare 9 popular machine learning classifiers and 7 regressors type machine learning models and measure their performance against neural network models to find out which machine learning model performs better. Since the dataset used is related to supply chain important parameters are identified and the machine learning models are trained with the dataset for detection of fraud transactions, late delivery of orders, sales revenue and quantity of products which customer orders. The machine learning classifiers used in this project are Logistic Regression,Linear Discriminant Analysis, Gaussian Naive Bayes, Support Vector Machines, k - Nearest Neighbors, Random Forest classification, Extra Trees classification,Extreme Gradient Boosting, Decision Tree classification for fraud detection and to predict late delivery on the basis accuracy,recall score and F1 score. The regression models used are Lasso, Ridge, Light Gradient boosting, Random Forest regression, Extreme Gradient Boosting regression, Decision Tree Regression, and Linear Regression to predict sales and quantity of the products required which are compared with mean absolute error (MAE) and root mean squareerror (RMSE).
+⸻
 
-## Data Collection
-The dataset used in this project is maintained transparently with the Creative Commons 4.0 license by Fabian Constante, Fernando Silva,and António Pereira through the Mendeley data repository. The dataset consists of roughly 180k transactions from supply chains used by the company DataCo Global for 3 years. The dataset can be downloaded from:
-https://data.mendeley.com/datasets/8gx2fvg2k6/5
+Project Overview
+
+The objective of this project is to detect fraudulent transactions using a supply chain dataset. Three machine learning models were implemented and compared:
+	•	Support Vector Machine (SVM)
+	•	Decision Tree Classifier
+	•	Random Forest Classifier
+
+Each model was trained and evaluated using the same dataset to ensure a fair comparison.
+
+⸻
+
+Objectives
+	•	Apply version control concepts using Git and GitHub
+	•	Collaborate using branches and merge workflows
+	•	Implement multiple machine learning models
+	•	Evaluate model performance using standard metrics
+	•	Compare models to determine the most suitable for fraud detection
+
+⸻
+
+Technologies Used
+	•	Python
+	•	Pandas
+	•	Scikit-learn
+	•	Matplotlib / Seaborn
+	•	Git
+	•	GitHub
+
+⸻
+
+Dataset
+
+The project uses the DataCo Smart Supply Chain dataset, which includes:
+	•	Customer information
+	•	Order details
+	•	Product data
+	•	Delivery and transaction attributes
+
+The dataset was preprocessed through cleaning, feature engineering, and encoding before model training.
+
+⸻
+
+Version Control Workflow
+
+The project followed a collaborative GitHub workflow:
+	•	Repository created on GitHub
+	•	Each member worked on a separate branch:
+	•	feature/svm-model
+	•	feature/decision-tree
+	•	feature/random-forest
+	•	Changes were committed with clear messages
+	•	Branches were pushed to the remote repository
+	•	Pull requests were used to merge work into the main branch
+	•	Merge conflicts were identified and resolved during integration
+
+This workflow ensured organized collaboration and proper version tracking.
+
+⸻
+
+Model Performance (Fraud Detection)
+
+SVM
+Accuracy - 97.75%
+Recall - 56.69%
+F1 Score - 28.40%
+
+Decision Tree
+Accuracy - 99.10%
+Recall - 79.65%
+F1 score - 80.64%
+
+Random Forest
+Accuracy - 98.71%
+Recall - 45.65%
+F1 score - 62.53%
+
+Results Summary
+
+The Decision Tree model achieved the best performance overall, with the highest recall and F1-score. This indicates that it was more effective at identifying fraudulent transactions while maintaining a good balance between precision and recall.
+
+The Random Forest model performed well but showed lower recall compared to Decision Tree. The SVM model achieved high accuracy but struggled to detect fraudulent cases effectively.
+
+⸻
+
+Conclusion
+
+This project shows that combining machine learning with version control practices improves both technical outcomes and team collaboration. GitHub enabled efficient teamwork, while the comparison of models provided insights into selecting the most suitable algorithm for fraud detection.
+
+⸻
+
+Future Improvements
+	•	Tune model hyperparameters for better performance
+	•	Address class imbalance using techniques such as SMOTE
+	•	Explore additional machine learning models
+	•	Deploy the model for real-time fraud detection
